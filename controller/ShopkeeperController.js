@@ -1,5 +1,5 @@
 const {Shopkeeper}=require("../model/Shopkeeper")
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 require('dotenv').config();
 const nodemailer =require("nodemailer")
 const ShopInfo=require("../model/ShopInfo");

@@ -25,10 +25,10 @@ app.use(cors());
 // Connect to MongoDB
 connection(url)
   .then(() => {
-    console.log("✅ Database connected");
+    console.log(" Database connected");
   })
   .catch((error) => {
-    console.error("❌ Error connecting to database:", error);
+    console.error("Error connecting to database:", error);
   });
 
 
@@ -50,5 +50,5 @@ app.get("/", (req, res) => {
 
 // Start Server (Use `server.listen` instead of `app.listen`)
 app.listen(4000, () => {
-  console.log("🚀 Server started on port 4000");
+  console.log(" Server started on port 4000");
 });
