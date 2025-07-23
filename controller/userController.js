@@ -14,9 +14,11 @@ const customerNotification = require("../model/customerNotification");
 const customerRequest = require("../model/customerRequest");
 
 const connection = new Redis({
-    host: "127.0.0.1",
-    port: 6379,
-    maxRetriesPerRequest: null
+  host: 'redis-12083.c276.us-east-1-2.ec2.redns.redis-cloud.com',
+  port: 12083,
+  username: 'default', 
+  password: 'oikiG5y1YCsefnKpw7RBvldRx3ckgIMH',
+  maxRetriesPerRequest: null
 });
 const RequestQueue = new Queue('customerRequests', { connection });
 
