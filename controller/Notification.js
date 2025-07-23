@@ -8,10 +8,17 @@ const ShopInfo = require("../model/ShopInfo");
 const axios = require("axios");
 const customerRequest = require("../model/customerRequest");
 
+// const connection = new Redis({
+//     host: "127.0.0.1",
+//     port: 6379,
+//     maxRetriesPerRequest: null
+// });
 const connection = new Redis({
-    host: "127.0.0.1",
-    port: 6379,
-    maxRetriesPerRequest: null
+  host: 'redis-12083.c276.us-east-1-2.ec2.redns.redis-cloud.com',
+  port: 12083,
+  username: 'default', 
+  password: 'oikiG5y1YCsefnKpw7RBvldRx3ckgIMH',
+  tls: {} // Required for Redis Cloud (TLS connection)
 });
 const RequestQueue = new Queue('ShpReq', { connection });
 
