@@ -18,7 +18,6 @@ const connection = new Redis({
   port: 12083,
   username: 'default', 
   password: 'oikiG5y1YCsefnKpw7RBvldRx3ckgIMH',
-  tls: {} ,
   maxRetriesPerRequest: null
 });
 const RequestQueue = new Queue('ShpReq', { connection });
